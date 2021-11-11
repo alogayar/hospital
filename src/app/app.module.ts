@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppComponent } from './app.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
@@ -19,7 +20,7 @@ import { AuthModule } from './auth/auth.module';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    AuthModule    
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
