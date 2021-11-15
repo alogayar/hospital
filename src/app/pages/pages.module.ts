@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
 
-import { ChartsModule } from 'ng2-charts';
+
 
 
 @NgModule({
@@ -22,7 +22,6 @@ import { ChartsModule } from 'ng2-charts';
   imports: [
     CommonModule,
     FormsModule,
-    ChartsModule,
     SharedModule,
     RouterModule,
     ComponentsModule
