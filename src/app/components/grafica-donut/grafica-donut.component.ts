@@ -7,13 +7,13 @@ import { MultiDataSet, Label } from 'ng2-charts/ng2-charts';
   ]
 })
 export class GraficaDonutComponent {
-  @Input() titulo:string;
-  @Input() data: MultiDataSet[];
-  @Input() labels: Label[];
-
+  @Input() titulo:string = 'Sin titulo';
+  @Input('datos') doughnutChartData: MultiDataSet = [
+    [250, 130, 70],
+  ];
+  @Input('etiquetas') doughnutChartLabels: Label[] = ['Label1', 'Label2', 'Label3'];
   
   constructor(){
-    console.log(this.data);
   }
 
 }

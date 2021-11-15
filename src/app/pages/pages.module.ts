@@ -9,26 +9,29 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
-
-
-
+import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
 
 @NgModule({
   declarations: [
-    DashboardComponent, 
+    DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent],
+    PagesComponent,
+    AcountSettingsComponent,
+  ],
   imports: [
     CommonModule,
     FormsModule,
     SharedModule,
     RouterModule,
-    ComponentsModule
+    ComponentsModule,
   ],
-  exports: [DashboardComponent, 
+  exports: [
+    DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent]
+    PagesComponent,
+    AcountSettingsComponent,
+  ],
 })
-export class PagesModule { }
+export class PagesModule {}
