@@ -11,11 +11,11 @@ import { PromesasComponent } from './promesas/promesas.component';
 const routes: Routes = [
   {
     path: 'dashboard', component: PagesComponent, children: [
-      { path: '', component: DashboardComponent },
-      { path: 'progress', component: ProgressComponent },
-      { path: 'grafica1', component: Grafica1Component },
-      { path: 'settings', component: AcountSettingsComponent },
-      { path: 'promesas', component: PromesasComponent },
+      { path: '', component: DashboardComponent, data: {titulo: 'Dashboard'}},
+      { path: 'progress', component: ProgressComponent, data: {titulo: 'Progress'} },
+      { path: 'grafica1', component: Grafica1Component, data: {titulo: 'Grafica #1'} },
+      { path: 'settings', component: AcountSettingsComponent, data: {titulo: 'Settings'} },
+      { path: 'promesas', component: PromesasComponent, data: {titulo: 'Promesas'} },
     ]
   }]
 

@@ -23,7 +23,6 @@ export class IncrementadorComponent {
   editaValor(valor: number) {
     if (valor > 100) {      
       this.progreso = 100;
-      console.log(this.progreso)
     }
     else {
       if (valor < 0) {
